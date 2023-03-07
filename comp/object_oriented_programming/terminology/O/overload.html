@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Overload</title>
+  </head>
+  <body>
+    Overwrite function of same name <br>
+    Compile-time polymorphism
+    <code>
+      <br>
+      <pre>
+      class Dockyard {
+      static void operator+(int n1, int n2);
+      	friend std::ostream operator&lt&lt(std::ostream &outfile, const Dockyard &rhs);
+      }
+      </pre>
+    <code/>
+  </body>
+ 

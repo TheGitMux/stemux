@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Friend</title>
+  </head>
+  <body>
+    Non-member functions have unrestricted access to  private and protected members of the class
+    <code>
+      <br>
+      <pre>
+	class Dockyard {
+	private:
+		int ships;
+	public:
+	friend static void printShips(Dockyard rhs);
+	};
+
+	static void printShips(Dockyard rhs)
+	{
+		std::cout &lt&lt rhs.ships &lt&lt std::endl;
+	}
+      </pre>
+    <code/>
+  </body>
+</html>

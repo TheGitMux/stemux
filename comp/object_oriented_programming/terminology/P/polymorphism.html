@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Polymorphism</title>
+  </head>
+  <body>
+    Static polymorphism: Function overloading or operator overloading <br>
+    <code>
+      <br>
+      <pre>
+	class Dockyard {
+		static void operator+(int n1, int n2);
+		static void operator+(std::ofstream &outfile, n1, n1);
+	}
+      </pre>
+      <code/>
+      Dynamic polymorphism: Function overriding or virtual function
+      <code>
+	<br>
+	<pre>
+	  class Dockyard {
+		public: void printContent() {
+		std::cout &lt&lt "5 ships\n";
+          }
+
+	  class Shipyard: public Dockyard{
+		public: void printContent() {
+		std::cout &lt&lt "15 ships\n";
+          }
+	</pre>
+      </code>
+  </body>
+</html>

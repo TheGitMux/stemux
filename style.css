@@ -1,0 +1,32 @@
+a:link {
+    color:#cdf;
+}
+
+a:hover, a:visited:hover {
+    color:#def;
+}
+
+a:visited {
+    color:#4444FF;
+}
+
+body {
+    background:#FAFAFA;
+    margin:1em auto;
+    max-width:40em;
+    padding:0.62.em;
+    font:1.2em/1.62 sans-serif;
+}
+
+h1 {
+    border-bottom: 4px solid #000;
+}
+
+h2 {
+    border-bottom: 2px solid #000;
+}
+
+h1,h2,h3 {
+    line-height: 1.2;
+    padding-bottom: 15px;
+}

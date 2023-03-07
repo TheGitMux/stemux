@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Overload</title>
+  </head>
+  <body>
+    Classes gain statements from other classes
+    <code>
+      <br>
+      <pre>
+	class Dockyard {
+	public:
+	static void printShips() {
+		std::cout &lt&lt "5 ships\n";
+		}
+		friend std::ostream operator&lt&lt(std::ostream &outfile, const Dockyard &rhs);
+	}; <br>
+	class Shipyard : public Dockard {
+	public:
+		static void printShips() {
+			std::cout &lt&lt "15 ships\n";
+		}
+	};
+      </pre>
+    <code/>
+  </body>
+ 

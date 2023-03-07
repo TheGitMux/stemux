@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Class</title>
+  </head>
+  <body>
+    Encapsulation type<br> <br>
+    Keyword: class, struct, union <br>
+    Access specifier: public, protected, private <br>
+    <i>Public</i> statements: access uninhibited. <br>
+    <i>Protected</i> statements: access uninhibited to iteself and derived classes. <br>
+    <i>Private</i> statements: access inhibited to all instances except itself. <br>
+    <code>
+      <br>
+      <pre>
+      class Matrix {
+	friend std::ostream operator&lt&lt(std::ostream &outfile, const Matrix &rhs);
+      }
+      </pre>
+    <code/>
+  </body>
+</html>
