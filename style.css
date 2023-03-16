@@ -49,9 +49,13 @@ h1,h2,h3 {
     color: #818181;
     display: block;
     border-bottom: 2px solid blue;
-    width: 25%;
+    width: 5%;
 }
 
 .sidenav a:hover {
     color: #f1f1f1;
+}
+
+.cpp {
+   font-family: "Courier New", Courier, monospace;
 }

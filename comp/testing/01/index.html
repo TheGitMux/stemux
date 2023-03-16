@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Testing</title>
+    <link rel="stylesheet" href="../../../style.css">
+  </head>
+  <body>
+    <div class="sidenav">
+      <a href="https://github.com/TheGitMux">Github</a>
+      <a href="https://sr.ht/~gitmux/">Source Hut</a>
+      <a href="https://gitlab.exherbo.org/ArchMux">Exherbo Gitlab</a>
+      <a href="mailto:gitmux@stemux.com">Contact</a>
+    </div>
+    <h1>Testing</h1>
+    <p>
+      Generating robust code requires testing.
+      Future coders will be quickly aware of the intended purpose of the code. <br>
+      The graph class below links 2 points with <code>linkNode()</code>.
+      <pre>
+      <code class="cpp">
+	g.linkNode(1, 2);
+	if (g.getEdgeIntMap(1, 0) != 2) {
+		std::cerr << "linkNode(1, 2) failure\n";
+		exit(EXIT_FAILURE);
+	}
+      </code>
+      </pre>
+      Magit testing whether directory creation has succeeded:
+      <pre>
+	<code>
+(defun magit-test-magit-toplevel ()
+  ;; repo
+  (make-directory "repo/subdir/subsubdir" t)
+  (should (equal (magit-toplevel   "repo/")
+                 (expand-file-name "repo/")))
+  (should (equal (magit-toplevel   "repo/")
+...
+	</code>
+      </pre>
+      Thank you, <br>
+      Edward Bates
+    </p>
+  </body>
+</html>
